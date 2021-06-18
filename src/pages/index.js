@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import axios from "configs/axios";
+import axios from "src/configs/axios";
+
+import Circle from "public/images/Circle.svg";
 
 export default function Home(props) {
   console.log(props);
@@ -13,10 +15,9 @@ export default function Home(props) {
       </Head>
 
       <main>
-        <h1>Beranda</h1>
-        <Link href="/random">
-          <a>Bring me to random</a>
-        </Link>
+        <section className="pt-10">
+          <Circle className="absolute left-0 bottom-0"></Circle>
+        </section>
       </main>
     </div>
   );
