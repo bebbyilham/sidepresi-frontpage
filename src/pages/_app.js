@@ -4,6 +4,7 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 
 import "../../tailwindcss/style.css";
+import "react-toastify/dist/ReactToastify.css";
 
 NProgress.configure({});
 Router.events.on("routeChangeStart", () => NProgress.start());
