@@ -7,7 +7,7 @@ const path = require("path");
 module.exports = withPlugins([
   withImages({}),
   withReactSvg({
-    webpack5: true,
+    webpack5: false,
     include: path.resolve(__dirname, "./public/images"),
     webpack(config, options) {
       return config;
