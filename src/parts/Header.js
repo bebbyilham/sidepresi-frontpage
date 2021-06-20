@@ -26,7 +26,7 @@ export default function Header({ onLight }) {
                 "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
-              Home
+              Beranda
             </a>
           </Link>
         </li>
@@ -38,31 +38,7 @@ export default function Header({ onLight }) {
                 "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
-              Home
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a
-              className={[
-                linkColor,
-                "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
-              ].join(" ")}
-            >
-              Home
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a
-              className={[
-                linkColor,
-                "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
-              ].join(" ")}
-            >
-              Home
+              Tentang Kami
             </a>
           </Link>
         </li>

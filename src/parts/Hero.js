@@ -33,10 +33,10 @@ export default function Hero() {
           </button>
         </form> */}
       </div>
-      <div className="hidden w-1/2 md:flex justify-end pt-24 pr-16">
-        <div className="relative" style={{ width: 500, height: 440 }}>
-          <div className="absolute w-full h-full -mb-8 -ml-8">
-            <div className="absolute w-full h-full -mb-8 -ml-8">
+      <div className="hidden w-1/2 md:flex justify-end pt-24 ">
+        <div className="relative" style={{ width: 600, height: 440 }}>
+          <div className="absolute w-full h-full -mb-8 -ml-2">
+            <div className="absolute w-full h-full -mb-8 -ml-2">
               <img src="/images/pic.svg" alt="Nurse" />
             </div>
           </div>
