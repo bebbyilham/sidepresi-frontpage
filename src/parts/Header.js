@@ -23,7 +23,7 @@ export default function Header({ onLight }) {
             <a
               className={[
                 linkColor,
-                "text-white hover:text-orange-500 text-lg px-6 py-3 font-medium",
+                "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
               Home
@@ -35,7 +35,7 @@ export default function Header({ onLight }) {
             <a
               className={[
                 linkColor,
-                "text-white hover:text-orange-500 text-lg px-6 py-3 font-medium",
+                "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
               Home
@@ -47,7 +47,7 @@ export default function Header({ onLight }) {
             <a
               className={[
                 linkColor,
-                "text-white hover:text-orange-500 text-lg px-6 py-3 font-medium",
+                "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
               Home
@@ -59,7 +59,7 @@ export default function Header({ onLight }) {
             <a
               className={[
                 linkColor,
-                "text-white hover:text-orange-500 text-lg px-6 py-3 font-medium",
+                "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
               Home
@@ -72,7 +72,7 @@ export default function Header({ onLight }) {
             target="_blank"
             rel="noopener noereferrer"
             href={linkCTA}
-            className="bg-orange-500 hover:bg-orange-600 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6"
+            className="bg-green-800 hover:bg-green-900 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6"
           >
             {textCTA}
           </a>
