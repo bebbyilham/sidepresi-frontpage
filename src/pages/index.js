@@ -8,9 +8,9 @@ import Circle from "public/images/circle.svg";
 import Header from "src/parts/Header";
 import Hero from "src/parts/Hero";
 import Partners from "src/parts/Partners";
+import ListBlogs from "src/parts/ListBlogs";
 
-export default function Home(props) {
-  console.log(props);
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -30,6 +30,9 @@ export default function Home(props) {
         <section className="container mx-auto pt-24">
           <Partners></Partners>
         </section>
+        <section className="container mx-auto pt-24">
+          <ListBlogs data={data}></ListBlogs>
+        </section>
       </main>
     </>
   );
@@ -37,7 +40,7 @@ export default function Home(props) {
 
 Home.getInitialProps = async () => {
   try {
-    const data = await axios.get(`/courses`);
+    const data = await axios.get(`/blogs`);
     return { data: data.data.data };
   } catch (error) {
     return error;
