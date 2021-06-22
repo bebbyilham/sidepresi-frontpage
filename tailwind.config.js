@@ -211,7 +211,7 @@ module.exports = {
       "2xl": "0 25px 25px rgba(0, 0, 0, 0.15)",
       none: "0 0 #0000",
     },
-    fill: { current: "currentColor" },
+    fill: { current: "currentColor", ...colors },
     grayscale: {
       0: "0",
       DEFAULT: "100%",
@@ -248,9 +248,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
-      sans: [
-        "Poppins",
-      ],
+      sans: ["Poppins"],
       serif: [
         "ui-serif",
         "Georgia",

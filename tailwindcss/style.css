@@ -34,3 +34,24 @@
   height: 648px;
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 }
+
+.item figure.item-image svg.icon-play {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 60%;
+  left: 50%;
+  transform-origin: bottom;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  @apply transition-all duration-300;
+}
+
+.item figure.item-image svg.icon-play circle {
+  @apply fill-orange-500;
+}
+
+.item:hover figure.item-image svg.icon-circle {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) rotateX(0deg);
+}
