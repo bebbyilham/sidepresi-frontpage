@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+#nprogress .bar {
+  @apply bg-green-900;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #22543d;
+  border-left-color: #22543d;
+}
+
 .link-wrapped::before {
   @apply cursor-pointer z-10 inset-0 absolute;
   content: "";
