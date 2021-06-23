@@ -9,7 +9,7 @@ export default function RenderItem({ item }) {
   console.log(item);
   return (
     <div className="w-1/4 px-4 ">
-      <div className="item">
+      <div className="item relative">
         <figure className="item-image">
           <IconPlay></IconPlay>
           <img
@@ -17,7 +17,7 @@ export default function RenderItem({ item }) {
             alt={item?.name ?? "some information"}
           />
         </figure>
-        <div className="item-meta">
+        <div className="item-meta mt-2">
           <h4 className="text-lg text-gray-900">{item?.name ?? "Blog name"}</h4>
           <h5 className="text-lg text-gray-900">
             {item?.category ?? "Blog name"}
