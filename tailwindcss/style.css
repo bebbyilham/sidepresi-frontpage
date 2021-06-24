@@ -68,7 +68,7 @@
   position: absolute;
   width: 46px;
   height: 46px;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform-origin: bottom;
   opacity: 0;
@@ -112,4 +112,8 @@
 
 .card .card-meta h5 {
   @apply text-orange-600;
+}
+
+.btn-login {
+  border-radius: 100px;
 }

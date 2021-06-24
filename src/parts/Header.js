@@ -38,7 +38,7 @@ export default function Header({ onLight }) {
                 "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
-              Tentang Kami
+              Informasi
             </a>
           </Link>
         </li>
@@ -48,7 +48,7 @@ export default function Header({ onLight }) {
             target="_blank"
             rel="noopener noereferrer"
             href={linkCTA}
-            className="bg-green-800 hover:bg-green-900 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6"
+            className="btn-login bg-green-800 hover:bg-green-900 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6"
           >
             {textCTA}
           </a>

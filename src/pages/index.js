@@ -10,6 +10,7 @@ import Hero from "src/parts/Hero";
 import Partners from "src/parts/Partners";
 import ListBlogs from "src/parts/ListBlogs";
 import ListCategories from "src/parts/ListCategories";
+import Footer from "src/parts/Footer";
 
 export default function Home({ data }) {
   return (
@@ -37,7 +38,9 @@ export default function Home({ data }) {
         <section className="container mx-auto pt-24">
           <ListCategories></ListCategories>
         </section>
-        <section className="container mx-auto py-24"></section>
+        <section className="mt-24 bg-orange-500 py-12">
+          <Footer></Footer>
+        </section>
       </main>
     </>
   );
