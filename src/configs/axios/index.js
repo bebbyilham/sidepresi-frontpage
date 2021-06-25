@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import errorHandler from "./errorHandler";
 
 const instance = axios.create({

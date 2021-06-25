@@ -12,7 +12,9 @@ import ListBlogs from "src/parts/ListBlogs";
 import ListCategories from "src/parts/ListCategories";
 import Footer from "src/parts/Footer";
 
-export default function Home({ data }) {
+import blogs from "src/constants/api/blogs";
+
+function Home({ data }) {
   return (
     <>
       <Head>
@@ -48,9 +50,11 @@ export default function Home({ data }) {
 
 Home.getInitialProps = async () => {
   try {
-    const data = await axios.get(`/blogs`);
-    return { data: data.data.data };
+    const data = await blogs.all();
+    return { data: data.data };
   } catch (error) {
     return error;
   }
 };
+
+export default Home;

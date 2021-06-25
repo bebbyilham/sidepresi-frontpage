@@ -14,9 +14,26 @@ export default function Header({ onLight }) {
   const textCTA = router.pathname.indexOf("/login") > -1 ? "Daftar" : "Masuk";
   return (
     <header className="flex justify-between items-center">
-      <div style={{ height: 54 }}>
-        <Logo className="on-dark"></Logo>
-      </div>
+      <ul className="flex">
+        <li>
+          <div style={{ height: 54 }}>
+            <Logo className="on-dark"></Logo>
+          </div>
+        </li>
+        <li>
+          <Link href="/">
+            <a
+              className={[
+                linkColor,
+                "text-green-800 hover:text-green-900",
+              ].join(" ")}
+            >
+              <h1 className="text-2xl py-3 font-semibold">SiDepresi</h1>
+            </a>
+          </Link>
+        </li>
+      </ul>
+
       <ul className="flex">
         <li>
           <Link href="/">
