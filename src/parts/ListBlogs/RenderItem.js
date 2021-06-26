@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 import IconPlay from "public/images/icon-play.svg";
+import IconTap from "public/images/icon-tap.svg";
 import capitalizedText from "src/helpers/capitalizedText";
 import { data } from "autoprefixer";
 
@@ -11,7 +12,7 @@ export default function RenderItem({ item }) {
     <div className="w-1/4 px-4 ">
       <div className="item relative">
         <figure className="item-image">
-          <IconPlay></IconPlay>
+          <IconTap></IconTap>
           <img
             src={item.thumbnail ?? ""}
             alt={item?.name ?? "some information"}

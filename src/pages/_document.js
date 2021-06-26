@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head />
         <link
           rel="shortcut icon"
-          href={`${process.env.NEXT_PUBLIC_BASE_URL}public/images/logo.png`}
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}/images/logo.png`}
         />
         <body>
           <Main />

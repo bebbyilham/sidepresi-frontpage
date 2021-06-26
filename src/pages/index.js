@@ -19,7 +19,7 @@ function Home({ data }) {
     <>
       <Head>
         <title>SiDepresi</title>
-        {/* <link rel="icon" href="/favicon.ico " /> */}
+        <link rel="icon" src="public/images/logo.png " />
       </Head>
 
       <main>
