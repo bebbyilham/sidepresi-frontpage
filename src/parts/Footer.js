@@ -13,6 +13,8 @@ export default function Footer() {
               <Link href="">
                 <a
                   href="https://rsjhbsaanin.sumbarprov.go.id"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   alt="RSJ Prof. HB Saanin Padang"
                   className="text-orange-300 hover:text-green-800 hover:underline"
                 >
@@ -24,6 +26,8 @@ export default function Footer() {
               <Link href="">
                 <a
                   href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-orange-300 hover:text-green-800 hover:underline"
                 >
                   PPNI RSJ Prof HB. Saanin Padang{" "}
@@ -34,6 +38,8 @@ export default function Footer() {
               <Link href="">
                 <a
                   href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-orange-300 hover:text-green-800 hover:underline"
                 >
                   Unit IT RSJ Prof HB. Saanin Padang{" "}

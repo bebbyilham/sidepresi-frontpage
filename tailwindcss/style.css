@@ -141,13 +141,13 @@
 }
 
 .meta-title {
-  @apply fixed bottom-0
+  @apply bottom-0 opacity-100 fixed;
   transition: all ease-in-out 0.45s;
-  box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.05);
 }
 
 .meta-title-enter {
-  opacity: 0;
+  opacity: -100%;
   bottom: -100%;
 }
 .meta-title-enter-active {
@@ -158,10 +158,10 @@
   opacity: 1;
   bottom: 0;
 }
-.meta-title-active {
+.meta-title-exit-active {
   opacity: 0;
   bottom: -100%;
 }
-.meta-title-done {
-  @apply bottom-0 opacity-100;
+.meta-title-enter-done {
+  @apply bottom-0 opacity-100 fixed;
 }

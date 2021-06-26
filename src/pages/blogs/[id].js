@@ -49,7 +49,10 @@ function DetailsBlog({ data }) {
   return (
     <>
       <Head>
-        <title>SiDepresi </title>
+        <title>
+          SiDepresi | {capitalizedText(data?.category ?? "Nama Kategori")} |{" "}
+          {capitalizedText(data?.name ?? "Nama Info")}
+        </title>
       </Head>
 
       <section className="pt-10 overflow-hidden" style={{ height: 330 }}>
@@ -103,21 +106,40 @@ function DetailsBlog({ data }) {
             classNames="meta-title"
             unmountOnExit
           >
-            <div className="meta-title w-full bg-white z-50 left-0 py-3">
+            <div className="meta-title w-full bg-white rounded-t-lg z-50 left-0 py-3">
               <div className="w-3/4 mx-auto">
                 <div className="flex items-center">
                   <div className="w-full">
-                    <h2 className="text-gray-600">
+                    <h2 className="text-orange-400">
                       {capitalizedText(data?.category ?? "Nama Kategori")}
                     </h2>
                     <h3 className="text-2xl text-green-800">
                       {capitalizedText(data?.name ?? "Nama Info")}
                     </h3>
                   </div>
+                  <span className="text-sm text-orange-500 whitespace-nowrap mr-4">
+                    {"Di Perbarui Pada : "}
+                    {data?.created_at ?? "-"}
+                  </span>
                 </div>
               </div>
             </div>
           </CSSTransition>
+        </div>
+        <div className="w-full mx-auto mt-0">
+          <div className="w-full">
+            <section>
+              <h6 className="font-medium text-green-800 text-2xl mb-4">
+                {capitalizedText(data?.category ?? "")}{" "}
+                <span className="text-orange-500">
+                  {capitalizedText(data?.name ?? "")}
+                </span>
+              </h6>
+              <p className="text-justify text-black text-lg leading-relaxed mb-3">
+                {capitalizedText(data?.description ?? "Tidak ada deskripsi")}
+              </p>
+            </section>
+          </div>
         </div>
       </section>
       <div style={{ height: 2000 }}></div>
