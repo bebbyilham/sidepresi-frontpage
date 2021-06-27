@@ -31,12 +31,6 @@ function DetailsBlog({ data }) {
     const stickyOffsetTop = footer.current.getBoundingClientRect().top;
 
     const stickyMetaToggler = () => {
-      console.log(
-        stickyOffsetTop,
-        window.pageYOffset,
-        window.innerHeight,
-        stickyOffsetTop >= window.pageYOffset + window.innerHeight
-      );
       setisSticky(stickyOffsetTop >= window.pageYOffset + window.innerHeight);
     };
 
@@ -119,7 +113,7 @@ function DetailsBlog({ data }) {
                   </div>
                   <span className="text-sm text-orange-500 whitespace-nowrap mr-4">
                     {"Di Perbarui Pada : "}
-                    {data?.created_at ?? "-"}
+                    {data?.updated_at ?? "-"}
                   </span>
                 </div>
               </div>
