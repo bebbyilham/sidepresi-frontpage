@@ -50,7 +50,7 @@ function DetailsBlog({ data }) {
       </Head>
 
       <section className="pt-10 overflow-hidden" style={{ height: 330 }}>
-        <div className="absolute inset-0 z-0 w-full h-1/2 bg-orange-500 opacity-100"></div>
+        <div className="absolute inset-0 z-0 w-full xl:h-1/2 2xl:h-80 bg-orange-500 opacity-100"></div>
         <div className="meta-tittle absolute inset-0 object-fill z-0 w-full h-1/2 flex justify-center items-center">
           <div className="text-center">
             <h3 className="text-lg text-white">
