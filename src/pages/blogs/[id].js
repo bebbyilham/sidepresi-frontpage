@@ -17,7 +17,7 @@ import CalendarDate from "public/images/icon-calendardate.svg";
 import CalendarUpdate from "public/images/icon-calendarupdate.svg";
 
 import Feature from "src/parts/Details/Feature";
-
+import BlogPhoto from "src/parts/Details/BlogPhoto";
 import Footer from "src/parts/Footer";
 
 function DetailsBlog({ data }) {
@@ -132,6 +132,23 @@ function DetailsBlog({ data }) {
               <p className="text-justify text-black text-lg leading-relaxed mb-3">
                 {capitalizedText(data?.description ?? "Tidak ada deskripsi")}
               </p>
+            </section>
+            <section className="mt-10">
+              <h6 className="font-medium text-green-800 text-2xl mb-4">
+                {"Foto "} {capitalizedText(data?.category ?? "")}{" "}
+                <span className="text-orange-500">
+                  {capitalizedText(data?.name ?? "")}
+                </span>
+              </h6>
+              <div className="flex justify-start item-center -mx-4 mt-6">
+                {data?.images?.length > 0 ? (
+                  data?.images?.map?.((photo, index) => (
+                    <BlogPhoto data={photo} key={index} />
+                  ))
+                ) : (
+                  <div className="w-full text-center py-12">No Item Found</div>
+                )}
+              </div>
             </section>
           </div>
         </div>
