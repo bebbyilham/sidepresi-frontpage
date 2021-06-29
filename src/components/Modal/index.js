@@ -13,20 +13,20 @@ export default function Modal(props) {
   const idModal = "modal";
   const modalOpen = "modal-open";
 
-  //setup function toogle allow
-  function toogleAllow() {
+  //setup function toggle allow
+  function toggleAllow() {
     setAllow(!Allow);
   }
 
-  //function toogle pengecekan (on/off)
-  function toogle() {
-    if (props.toogleModal) props.toogleModal();
+  //function toggle pengecekan (on/off)
+  function toggle() {
+    if (props.toggleModal) props.toggleModal();
     else setDisplay(!Display);
   }
 
   //function utk capture ketika diclick di luar
   function handleClickOutside(event) {
-    if (ModalRef?.current.contains?.(event.target) && Allow) toogle();
+    if (ModalRef?.current.contains?.(event.target) && Allow) toggle();
   }
 
   //capture event dari document
@@ -72,15 +72,15 @@ export default function Modal(props) {
   //jika siap
   return (
     <>
-      {props.children(toogle)}
+      {props.children(toggle)}
       {document && document.getElementById(idModal) && (
         <div>
           {createPortal(
             <CSSTransition
               in={props.in ?? Display}
               timeout={500}
-              onExit={toogleAllow}
-              onExited={toogleAllow}
+              onExit={toggleAllow}
+              onExited={toggleAllow}
               classNames="overlay"
               unmountOnExit
             >
@@ -93,10 +93,10 @@ export default function Modal(props) {
                     className="bg-white shadow-2xl max-w-3xl max-h-2xl"
                   >
                     <div className="relative">
-                      <span className="modal-close" onClick={toogle}></span>
+                      <span className="modal-close" onClick={toggle}></span>
                     </div>
 
-                    {props.content(toogle)}
+                    {props.content(toggle)}
                   </div>
                 </div>
               </div>

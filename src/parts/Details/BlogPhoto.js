@@ -10,8 +10,8 @@ export default function BlogPhoto({ data }) {
         <Preview></Preview>
         <img src={data} alt={data} className="object-cover h-32 w-full" />
       </figure>
-      <Modal content={(toogle) => <img src={data} alt={data} />}>
-        {(toogle) => <span onClick={toogle} className="link-wrapped"></span>}
+      <Modal content={(toggle) => <img src={data} alt={data} />}>
+        {(toggle) => <span onClick={toggle} className="link-wrapped"></span>}
       </Modal>
     </div>
   );
