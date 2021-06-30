@@ -150,6 +150,29 @@ function DetailsBlog({ data }) {
                 )}
               </div>
             </section>
+            <section className="mt-10">
+              <h6 className="font-medium text-green-800 text-lg mb-2">
+                {"Creator "}
+                <span className="text-orange-500">
+                  {capitalizedText(data?.category ?? "")}
+                </span>
+              </h6>
+              <div className="flex item-center">
+                <img
+                  src={data?.creator?.profile ?? ""}
+                  alt={data?.creator?.name}
+                  className="w-10 rounded-full overflow-hidden object-cover"
+                />
+                <div className="ml-4">
+                  <h2 className="text-sm text-black">
+                    {data?.creator?.name ?? "Nama Creator"}
+                  </h2>
+                  <h3 className="text-xs text-gray-600">
+                    {data?.creator?.profession}
+                  </h3>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </section>
