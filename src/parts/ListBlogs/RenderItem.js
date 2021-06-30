@@ -26,7 +26,7 @@ export default function RenderItem({ item }) {
             {capitalizedText(item?.category ?? "Blog name")}
           </h5>
         </div>
-        <Link href="/blogs/[slug]" as={`/blogs/${item.id}`}>
+        <Link href="/blogs/[id]" as={`/blogs/${item.id}`}>
           <a href="" className="link-wrapped"></a>
         </Link>
       </div>

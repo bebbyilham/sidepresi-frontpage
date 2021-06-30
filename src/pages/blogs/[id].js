@@ -143,7 +143,7 @@ function DetailsBlog({ data }) {
               <div className="flex justify-start item-center -mx-4 mt-6">
                 {data?.images?.length > 0 ? (
                   data?.images?.map?.((photo, index) => (
-                    <BlogPhoto data={photo} key={index} />
+                    <BlogPhoto data={photo.image} key={index} />
                   ))
                 ) : (
                   <div className="w-full text-center py-12">No Item Found</div>

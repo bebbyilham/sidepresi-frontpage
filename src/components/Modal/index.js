@@ -26,7 +26,12 @@ export default function Modal(props) {
 
   //function utk capture ketika diclick di luar
   function handleClickOutside(event) {
-    if (ModalRef?.current.contains?.(event.target) && Allow) toggle();
+    if (
+      ModalRef?.current &&
+      !ModalRef?.current?.contains?.(event.target) &&
+      Allow
+    )
+      toggle();
   }
 
   //capture event dari document
