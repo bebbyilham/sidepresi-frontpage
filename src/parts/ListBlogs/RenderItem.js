@@ -27,7 +27,7 @@ export default function RenderItem({ item }) {
           </h5>
         </div>
         <Link href="/blogs/[id]" as={`/blogs/${item.id}`}>
-          <a href="" className="link-wrapped"></a>
+          <a className="link-wrapped"></a>
         </Link>
       </div>
     </div>
