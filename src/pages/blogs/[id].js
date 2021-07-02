@@ -146,7 +146,7 @@ function DetailsBlog({ data }) {
                     <BlogPhoto data={photo.image} key={index} />
                   ))
                 ) : (
-                  <div className="w-full text-center py-12">No Item Found</div>
+                  <div className="w-full text-center py-12">Tidak ada foto</div>
                 )}
               </div>
             </section>
