@@ -19,7 +19,7 @@ export default function ListBlogs({ data }) {
         <div className="w-auto">
           <Link href="/blogs">
             <a href="" className="text-gray-600 hover:underline text-sm">
-              Lihat Semua
+              Cari informasi
             </a>
           </Link>
         </div>
