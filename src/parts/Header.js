@@ -55,7 +55,7 @@ export default function Header({ onLight }) {
                 "text-white hover:text-green-900 text-lg px-6 py-3 font-medium",
               ].join(" ")}
             >
-              Informasi
+              Tentang Kami
             </a>
           </Link>
         </li>
