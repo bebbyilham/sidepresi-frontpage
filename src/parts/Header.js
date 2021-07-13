@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import propTypes from "prop-types";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
 
 export default function Header({ onLight }) {
+  const [User, setUser] = useState(() => null);
+  useEffect(() => {
+    const userCookies = decodeURIComponent(window.document.cookie)?.split(";");
+  }, []);
   const linkColor = onLight ? "text-gray-900" : "text-white";
   const router = useRouter();
   const linkCTA =
