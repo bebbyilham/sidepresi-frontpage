@@ -7,7 +7,7 @@ export default function Hero() {
 
   //   function submit() {
   //     window.open(
-  //       `${process.env.NEXT_PUBLIC_MEMBERPAGE_URL}/register?email=${state}`
+  //       `${process.env.NEXT_PUBLIC_NURSEPAGE_URL}/register?email=${state}`
   //     );
   //   }
   return (
