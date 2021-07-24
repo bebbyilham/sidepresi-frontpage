@@ -79,7 +79,7 @@ export default function Header({ onLight }) {
               href={linkCTA}
               className="btn-login hover:bg-green-900 transition-all duration-200 text-white hover:text-teal-500 text-lg px-6 py-3 font-medium ml-6 inline-flex items-center"
             >
-              <span className="rounded-full overflow-hidden mr-3 border-2 border-orange-500">
+              <span className="rounded-full overflow-hidden mr-3 ring-2 ring-white">
                 {User?.thumbnail ? (
                   <img
                     src={User?.thumbnail}
@@ -87,7 +87,7 @@ export default function Header({ onLight }) {
                     className="object-cover w-8 h-8 inline-block"
                   />
                 ) : (
-                  <DefaultAvatar className="fill-green-800 w-8 h-8 inline-block"></DefaultAvatar>
+                  <DefaultAvatar className="fill-green-800 w-8 h-8 inline-block ring-2 ring-green-800"></DefaultAvatar>
                 )}
               </span>
               Hi, {User.name}
