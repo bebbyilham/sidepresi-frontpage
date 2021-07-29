@@ -59,7 +59,7 @@ export default function Header({ onLight }) {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/about">
             <a
               className={[
                 linkColor,
