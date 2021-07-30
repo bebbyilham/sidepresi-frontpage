@@ -12,9 +12,10 @@ export default function Hero() {
   //   }
   return (
     <div className="flex justify-between items-center">
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2 mt-8 md:mt-0">
         <h1 className="text-5xl text-white mb-5 font-semibold">
-          <span className="text-white mb-5"></span>Selamat Datang Di <br></br>
+          <span className="text-white mb-5"></span>Selamat Datang Di{" "}
+          <br className="hidden md:block" />
           <span className="text-green-800 mb-5">SiDepresi</span>
         </h1>
         <p className="text-white font-light text-lg mb-8">

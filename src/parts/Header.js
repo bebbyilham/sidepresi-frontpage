@@ -7,6 +7,8 @@ import DefaultAvatar from "public/images/default-avatar.svg";
 
 export default function Header({ onLight }) {
   const [User, setUser] = useState(() => null);
+  const [ToggleMenu, setToggleMenu] = useState(() => false);
+
   useEffect(() => {
     const userCookies =
       decodeURIComponent(window.document.cookie)
@@ -24,28 +26,39 @@ export default function Header({ onLight }) {
       : `${process.env.NEXT_PUBLIC_NURSEPAGE_URL}/login`;
   const textCTA = router.pathname.indexOf("/login") > -1 ? "Daftar" : "Masuk";
   return (
-    <header className="flex justify-between items-center">
-      <ul className="flex items-center">
-        <li>
-          <div style={{ height: 54 }}>
-            <Logo className="on-dark"></Logo>
-          </div>
-        </li>
-        <li>
-          <Link href="/">
-            <a
-              className={[
-                linkColor,
-                "text-green-800 hover:text-green-900",
-              ].join(" ")}
-            >
-              <h1 className="text-2xl py-3 font-semibold">SiDepresi</h1>
-            </a>
-          </Link>
-        </li>
-      </ul>
+    <header
+      className={[
+        "flex justify-between items-center",
+        ToggleMenu ? "fixed w-full -mx-4 px-4" : "",
+      ].join("")}
+    >
+      <div style={{ height: 54 }}>
+        <Logo className="on-dark"></Logo>
+        {/* <Link href="/">
+              <a
+                className={[
+                  linkColor,
+                  "text-green-800 hover:text-green-900",
+                ].join(" ")}
+              >
+                <h1 className="text-2xl py-3 font-semibold">SiDepresi</h1>
+              </a>
+            </Link> */}
+      </div>
 
-      <ul className="flex items-center">
+      <div className="flex md:hidden">
+        <button
+          onClick={() => setToggleMenu((prev) => !prev)}
+          className={["toggle z-50", ToggleMenu ? "active" : ""].join(" ")}
+        ></button>
+      </div>
+
+      <ul
+        className={[
+          "transition-all duration-200 items-center fixed inset-0 bg-orange-500 pt-24 md:pt-0 md:bg-transparent md:relative md:flex md:opacity-100 md:visible",
+          ToggleMenu ? "opacity-100 visible z-20" : "opacity-0 invisible",
+        ]}
+      >
         <li>
           <Link href="/">
             <a

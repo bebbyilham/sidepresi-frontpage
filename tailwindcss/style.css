@@ -219,3 +219,39 @@
 .overlay-enter-done {
   opacity: 1;
 }
+
+.toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 9999;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle:before,
+.toggle:after {
+  @apply right-0 absolute bg-gray-200 transition-all duration-200;
+  content: "";
+  height: 3px;
+  transform-origin: center;
+}
+
+.toggle:before {
+  top: 26%;
+  width: 20px;
+}
+
+.toggle:after {
+  top: 58%;
+  width: 12px;
+}
+
+.toggle.active:before {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.toggle.active:after {
+  transform: translateY(-50%) rotate(45deg);
+}
