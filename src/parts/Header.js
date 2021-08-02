@@ -30,10 +30,12 @@ export default function Header({ onLight }) {
       className={[
         "flex justify-between items-center",
         ToggleMenu ? "fixed w-full -mx-4 px-4" : "",
-      ].join("")}
+      ].join(" ")}
     >
-      <div style={{ height: 54 }}>
-        <Logo className="on-dark"></Logo>
+      <div style={{ height: 54, zIndex: 50 }}>
+        <a href="/">
+          <Logo className="on-dark"></Logo>
+        </a>
         {/* <Link href="/">
               <a
                 className={[
@@ -57,9 +59,9 @@ export default function Header({ onLight }) {
         className={[
           "transition-all duration-200 items-center fixed inset-0 bg-orange-500 pt-24 md:pt-0 md:bg-transparent md:relative md:flex md:opacity-100 md:visible",
           ToggleMenu ? "opacity-100 visible z-20" : "opacity-0 invisible",
-        ]}
+        ].join(" ")}
       >
-        <li>
+        <li className="my-4 md:my-0">
           <Link href="/">
             <a
               className={[
@@ -71,7 +73,7 @@ export default function Header({ onLight }) {
             </a>
           </Link>
         </li>
-        <li>
+        <li className="my-4 md:my-0">
           <Link href="/about">
             <a
               className={[
@@ -84,7 +86,7 @@ export default function Header({ onLight }) {
           </Link>
         </li>
 
-        <li>
+        <li className="mt-8 md:mt-0">
           {User ? (
             <a
               target="_blank"

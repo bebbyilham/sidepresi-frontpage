@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Partners() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex flex-wrap justify-center items-center">
       <div className="w-full sm:w-1/6 mb-8 md:mb-0">
         <img
           src="/images/logo-sumbar.svg"

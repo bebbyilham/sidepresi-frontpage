@@ -69,10 +69,10 @@ function Blogs({ data }) {
         <title>Sidepresi | Info</title>
       </Head>
 
-      <section className="pt-10 overflow-hidden" style={{ height: 360 }}>
-        <div className="absolute inset-0 z-0 w-full xl:h-1/2 2xl:h-80 bg-orange-500 opacity-100"></div>
+      <section className="pt-10 z-30 relative" style={{ height: 360 }}>
+        <div className="absolute inset-0 z-0 w-full h-full bg-orange-500 opacity-100"></div>
         <div
-          className="meta-tittle absolute inset-0 object-fill z-0 pt-24 w-full h-1/2 flex justify-center items-center"
+          className="meta-tittle absolute inset-0 object-fill z-0 pt-24 w-full flex justify-center items-center"
           style={{ marginBottom: "-25px" }}
         >
           <div className="px-4">
@@ -99,7 +99,7 @@ function Blogs({ data }) {
               />
               {Search.length >= 3 && (
                 <div
-                  className="flex flex-col absolute py-2 px-4 bg-white border border-gray-200 w-full"
+                  className="flex flex-col absolute py-2 px-4 bg-white border border-gray-600 w-full"
                   style={{ top: 75 }}
                 >
                   {SearchResponse.isLoading ? (
@@ -111,7 +111,7 @@ function Blogs({ data }) {
                       {SearchResponse.data?.length > 0
                         ? SearchResponse.data?.map((item, index) => {
                             return (
-                              <div className="flex item-center -mx-4 py-2 cursor-pointer hover:bg-gray-200 relative">
+                              <div className="flex items-center -mx-4 py-2 cursor-pointer hover:bg-gray-200 relative">
                                 <div
                                   className="w-auto px-4"
                                   style={{ width: 150 }}
@@ -151,10 +151,11 @@ function Blogs({ data }) {
           <Header></Header>
         </div>
       </section>
-      <section className="container mx-auto pt-24">
+
+      <section className="container px-4 mx-auto pt-24">
         <ListBlogs data={data}></ListBlogs>
       </section>
-      <section className="container mx-auto pt-24">
+      <section className="container px-4 mx-auto pt-24">
         <ListCategories></ListCategories>
       </section>
       <section className="mt-24 bg-orange-500 py-12">

@@ -49,6 +49,14 @@
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 }
 
+@media (max-width: 640px) {
+  .header-clipping svg#accent-circle {
+    bottom: 50px;
+    transform: rotate(-14deg);
+    left: -27px;
+  }
+}
+
 .item figure.item-image:before {
   content: "";
   @apply absolute inset-0 bg-green-900 opacity-0 transition-all duration-200;
@@ -247,6 +255,12 @@
 .toggle:after {
   top: 58%;
   width: 12px;
+}
+
+.toggle.active:before,
+.toggle.active:after {
+  width: 20px;
+  top: 50%;
 }
 
 .toggle.active:before {

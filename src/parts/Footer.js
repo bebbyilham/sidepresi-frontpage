@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto">
-      <div className="flex flex-justify-between">
-        <div className="w-1/3">
+    <footer className="container px-4 mx-auto">
+      <div className="flex flex-wrap flex-justify-between">
+        <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h6 className="text-white">Tentang Kami</h6>
           <ul className="mt-4">
             <li className="mt-2">
@@ -48,7 +48,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="w-1/3">
+        <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h6 className="text-white">Alamat</h6>
           <p className="mt-4 text-orange-300 leading-loose">
             Jl. Raya Gadut, Limau Manis Selatan,

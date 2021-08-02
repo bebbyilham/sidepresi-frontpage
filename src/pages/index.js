@@ -25,22 +25,20 @@ function Home({ data }) {
 
       <main>
         <section className="header-clipping pt-10 min-h-screen md:min-h-0">
-          <div className="sunshine max-w-full">
-            <Sunshine></Sunshine>
-          </div>
+          {/* <div className="sunshine max-w-full"></div> */}
           <Circle className="absolute left-0 bottom-0"></Circle>
           <div className="container mx-auto px-4">
             <Header></Header>
             <Hero></Hero>
           </div>
         </section>
-        <section className="container mx-auto pt-24">
+        <section className="container px-4 mx-auto md:pt-24">
           <Partners></Partners>
         </section>
-        <section className="container mx-auto pt-24">
+        <section className="container px-4 mx-auto md:pt-24">
           <ListBlogs data={data}></ListBlogs>
         </section>
-        <section className="container mx-auto pt-24">
+        <section className="container px-4 mx-auto md:pt-24">
           <ListCategories></ListCategories>
         </section>
         <section className="mt-24 bg-orange-500 py-12">

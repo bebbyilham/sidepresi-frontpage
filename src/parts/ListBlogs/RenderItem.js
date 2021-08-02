@@ -9,7 +9,7 @@ import { data } from "autoprefixer";
 
 export default function RenderItem({ item }) {
   return (
-    <div className="w-1/4 px-4 ">
+    <div className="w-full md:w-1/4 px-4 mb-8">
       <div className="item relative">
         <figure className="item-image">
           <IconTap></IconTap>
