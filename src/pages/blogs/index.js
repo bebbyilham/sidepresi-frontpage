@@ -95,11 +95,11 @@ function Blogs({ data }) {
                     ? "Ketik minimal 3 karakter untuk mencari"
                     : "Cari Berita, Artikel dan INFOKOMKEP disini"
                 }
-                className="bg-white focus:outline-none transition-all duration-200 focus:border-teal-500 border border-gray-600 px-4 py-3 w-full mt-6"
+                className="bg-white focus:outline-none transition-all duration-200 focus:border-teal-500 border border-green-600 rounded-md px-4 py-3 w-full mt-6"
               />
               {Search.length >= 3 && (
                 <div
-                  className="flex flex-col absolute py-2 px-4 bg-white border border-gray-600 w-full"
+                  className="flex flex-col absolute py-2 px-4 bg-white border border-green-500 rounded-md w-full"
                   style={{ top: 75 }}
                 >
                   {SearchResponse.isLoading ? (
