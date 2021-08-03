@@ -3,7 +3,7 @@ import React from "react";
 export default function Feature({ data }) {
   return (
     <div
-      className="border border-gray-300 rounded-lg bg-white p-4"
+      className="border border-gray-300 rounded-lg bg-white p-4 w-full md:w-1/3"
       style={{ width: 298 }}
     >
       <div className="flex">

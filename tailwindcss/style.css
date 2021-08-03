@@ -115,6 +115,12 @@
   transform: translateX(-50%) translateY(-50%) rotateX(0deg);
 }
 
+.blog-wrapper {
+  @apply absolute inset-0 z-0;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
 .card {
   @apply border-gray-200 h-full p-6 border relative;
 }
@@ -148,33 +154,33 @@
   border-radius: 100px;
 }
 
-.meta-title {
+.meta-tag {
   @apply bottom-0 opacity-100 fixed;
   transition: all ease-in-out 0.45s;
   box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.05);
 }
 
-.meta-title-enter {
+.meta-tag-enter {
   opacity: -100%;
   bottom: -100%;
 }
 
-.meta-title-enter-active {
+.meta-tag-enter-active {
   opacity: 1;
   bottom: 0;
 }
 
-.meta-title-exit {
+.meta-tag-exit {
   opacity: 1;
   bottom: 0;
 }
 
-.meta-title-exit-active {
+.meta-tag-exit-active {
   opacity: 0;
   bottom: -100%;
 }
 
-.meta-title-enter-done {
+.meta-tag-enter-done {
   @apply bottom-0 opacity-100 fixed;
 }
 
